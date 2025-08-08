@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pirata+One&display=swap" rel="stylesheet">
@@ -15,28 +16,28 @@
                 <div class="counter">
                     <h3>Hits</h3>
                     <div class="counterBoard">
-                        <p class="scoreNum" id="scoreHit">0</p>
+                        <p class="scoreNum" id="scoreHit" aria-live="polite">0</p>
                         <div class="buttonContainer">
-                            <button class="scoreBtn" id="btnScorePlusHit" onclick="addHit()">+</button>
-                            <button class="scoreBtn" id="btnScoreMinusHit" onclick="subtractHit()">-</button>
+                            <button class="scoreBtn" id="btnScorePlusHit" onclick="addHit()" aria-label="Add hit">+</button>
+                            <button class="scoreBtn" id="btnScoreMinusHit" onclick="subtractHit()" aria-label="Remove hit">-</button>
                         </div>
                     </div>
                 </div>
                 <div class="counter">
                     <h3>Misses</h3>
                     <div class="counterBoard">
-                        <p class="scoreNum" id="scoreMiss">0</p>
+                        <p class="scoreNum" id="scoreMiss" aria-live="polite">0</p>
                         <div class="buttonContainer">
-                            <button class="scoreBtn" id="btnScorePlusMiss" onclick="addMiss()">+</button>
-                            <button class="scoreBtn" id="btnScoreMinusMiss" onclick="subtractMiss()">-</button>
+                            <button class="scoreBtn" id="btnScorePlusMiss" onclick="addMiss()" aria-label="Add miss">+</button>
+                            <button class="scoreBtn" id="btnScoreMinusMiss" onclick="subtractMiss()" aria-label="Remove miss">-</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="footer">
-                <button id="btnLongRest" onclick="longRest()">Long Rest</button>
+                <button id="btnLongRest" onclick="longRest()">Long Rest 🌙</button>
             </div>
         </div>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     </body>
 </html>
