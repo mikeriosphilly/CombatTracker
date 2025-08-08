@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    background-image: url("parchment-bg.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    color: #e5c58a;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+h1, h3 {
+    font-weight: normal;
+    font-family: "Pirata One", system-ui;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#counterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    min-width: 250px;
+}
+
+.counterBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center; 
+    background: #2c0700;
+    
+    /* bevel border */  
+    border-width: 24px;
+    border-style: solid;
+    border-image: url(corners_3.svg) 12 fill;
+    background-clip: padding-box;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.75));
+    -webkit-background-clip: padding-box; 
+}
+
+.buttonContainer {
+    display: flex;
+}
+
+button {
+    background-color: #43180f;
+    color: #e5c58a;
+    cursor: pointer; 
+    border: 2px solid #e5c58a;  
+    transition: 
+        background 0.2s,
+        transform 0.15s cubic-bezier(.4,2,.6,1),
+        box-shadow 0.15s cubic-bezier(.4,2,.6,1);
+}
+
+button:hover {
+    background-color: #6a2a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35), 0 0px 0 #e5c58a inset;
+}
+
+button:active {
+    box-shadow:
+        0 0 4px 1px #ffe6a3a2,
+        0 6px 18px rgba(0,0,0,0.05),
+        0 1.5px 0 #e5c58aa6;
+    background-color: #7a3a23;
+    outline: none;
+}
+
+.scoreBtn {
+    width: 100%;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    font-size: 2rem;
+}
+
+.scoreNum {
+    font-weight: normal;
+    font-family: "Pirata One", system-ui;
+    font-size: 4.5rem;
+    margin: 0px;
+}
+
+#footer {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#btnLongRest {
+    font-weight: normal;
+    font-family: "Pirata One", system-ui;
+    font-size: 2.5rem;
+    padding: 10px 20px;
+}
+
+
+@media (max-width: 600px) {
+    #counterContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    #header {
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0px;
+    }
+}
