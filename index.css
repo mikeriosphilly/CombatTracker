@@ -155,6 +155,10 @@ button:active {
         margin: 20px;
     }
 
+    .counterBoard {
+        margin-top: 8px;
+    }
+
     #header {
         text-align: center;
         padding-bottom: 10px;
