@@ -49,6 +49,7 @@ h3 {
     align-items: center;
     width: 25%;
     min-width: 250px;
+    margin: 0px 20px
 }
 
 .counterBoard {
@@ -130,22 +131,32 @@ button:active {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     #counterContainer {
         flex-direction: column;
         align-items: center;
     }
 
     .counter {
-        width: 80%;
-        margin-top: 10px;
+        width: 70%;
+        margin: 10px;
     }
 
     #header {
         text-align: center;
+        padding-bottom: 10px;
     }
 
     h1 {
         margin: 0px;
+        font-size: 4rem;
+    }
+
+    .scoreBtn {
+        margin: 0px 20px;
+    }
+
+    .scoreNum {
+        font-size: 3.5rem;
     }
 }
